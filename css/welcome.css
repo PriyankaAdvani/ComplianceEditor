@@ -1,0 +1,197 @@
+/*
+    app.css
+
+    Style-sheet for complete application
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html {
+    background-color: white;
+}
+
+body {
+  font: 400 15px Lato, sans-serif;
+  *line-height: 1.8;
+  color: #818181;
+  height: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  *color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #32BBFF;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  *color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #32BBFF;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 24px;
+  *color: #303030;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo-small {
+  color: #32BBFF;
+  font-size: 50px;
+}
+.logo {
+  color: #32BBFF;
+  font-size: 200px;
+}
+
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.item span {
+  font-style: normal;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #32BBFF;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+  display: block;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #32BBFF !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #32BBFF;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navbar a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navbar li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
